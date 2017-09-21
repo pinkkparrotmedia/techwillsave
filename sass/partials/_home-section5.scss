@@ -1,0 +1,79 @@
+.tws-section5{
+ 	
+ 	text-align: center; 
+ 	.wrapper{
+ 		padding: 0 17pt 70pt;
+ 		background: {
+ 			image: url(images/social_background.png);
+ 			color: rgb(250,252,254);
+ 			position: center bottom -57px;
+ 			repeat: no-repeat;
+ 			size: contain;
+ 		}
+ 		overflow: hidden;
+
+ 	}
+ 	h2{
+ 		@extend .medium-heading;
+ 		letter-spacing: 0.2pt;
+ 		padding: 60pt 1pt 50pt;
+ 	}
+ 	ul{
+ 		width: 1000px;
+		text-align: left;
+		margin-bottom: 40pt;
+ 	}
+ 	li{
+ 		width: 232pt;
+ 		height: 322pt;
+ 		background-color: #fff;
+ 		@include border-radius(10pt); 
+ 		text-align: left;
+ 		overflow: hidden;
+ 		display: inline-block;
+		margin: 0 5px;
+		position: relative;
+		@include box-shadow(0 0 7px 2px #ededed);
+		.tws-inner{
+			padding: 17pt;
+		}
+ 		.tws-react{
+ 			i{
+ 				display: inline-block; 
+ 				height: 20px;
+				width: 28px;
+ 			}
+ 			span{
+ 				font-size: 14pt;
+ 				color: rgb(155,160,173);
+ 				letter-spacing: 0.5pt;
+ 			}
+ 		}
+
+ 		.tws-react{
+ 			position: absolute;
+			bottom: 17pt;
+			left: 10pt;
+ 		}
+ 	}
+
+ 	img{
+ 		max-width: 100%;
+ 	}
+
+ 	small{
+ 		color: rgb(160,92,168); 
+ 		font-size: 14pt;
+ 	}
+ 	h3{
+ 		font-size: 26pt;
+ 		line-height: 36pt;
+ 		letter-spacing: 0.6pt;
+ 		@media only screen and (max-width: 450px) {
+ 			font-size: 20pt;
+ 		}
+ 	}
+ 	a{
+ 		@extend .tws-cart-btn;
+ 	}
+ }

@@ -1,0 +1,49 @@
+header{	
+ 	
+ 	.wrapper{
+		background:{
+	 		image: url(images/twsu170709Shot01345Base3PrintCopy@2x.png);
+	 		size: contain;
+	 		position: center bottom;
+	 		repeat: no-repeat;
+	 		color: rgb(253,204,32);	
+	 	}
+	 	height: 552pt;
+	 	padding: 61pt 21pt;
+	 	@media only screen and (max-width: 450px) {
+		 	height: 420pt;
+			padding: 17pt;
+		}
+ 	} 
+
+ 	h2{
+ 		font:{
+ 			size: 56pt;
+ 			weight: bold;
+ 			family: $prim-font;
+ 		} 
+
+ 		@media only screen and (max-width: 450px) {
+		 	font-size: 30pt;
+		}
+
+ 		color: #fff;
+ 		text-transform: uppercase;
+ 	}
+ 	span{
+ 		display: block;
+ 		
+ 		
+ 	}
+ 	.tws-ages{
+ 		font-size: 16pt;
+ 		color: $secondary-color;
+ 		text-transform: uppercase;
+ 		margin: 10pt 0;
+ 		font-weight: bold;
+ 	}
+ 	.tws-price{
+ 		font-size: 28pt; 
+ 		color: #fff;
+ 	}
+ }

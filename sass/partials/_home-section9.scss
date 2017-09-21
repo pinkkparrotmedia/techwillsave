@@ -1,0 +1,70 @@
+
+ .tws-section9{
+ 	text-align: center;
+ 	.wrapper{
+ 		background:{
+ 			image: url(images/Artboard_3.png);
+ 			color: $third-color;
+ 			position: center;
+ 			repeat: no-repeat;
+ 			size: cover;
+ 		}
+ 		padding: 40pt 17pt;
+ 	}
+ 	img{
+ 		max-width: 100%;
+ 	}
+
+ 	h2{
+ 		@extend .large-bold-heading;
+ 		color: #fff;
+ 	}
+ 	p{
+ 		white-space: pre-line;
+ 		margin: 10pt 0 35pt;
+ 		color: #fff;
+ 		@extend .medium-contents;
+ 	}
+ 	li{
+ 		background-color: #fff;
+ 		text-align: left;
+ 		margin-bottom: 30pt; 
+ 		@include border-radius(5pt); 
+ 		@include box-shadow(0 2pt 4pt 0pt #545454);
+ 		overflow: hidden;
+ 		.inner{ 
+ 			padding: 20pt;
+ 			p{
+ 				color: $prim-color;
+ 				font-size: 15pt;
+ 				line-height: 22pt;
+ 				margin-bottom: 60pt;
+ 			}
+ 			a{
+ 				@extend .tws-cart-btn;
+ 				width: 276.6pt;
+ 				height: 59pt;
+ 				line-height: 59pt;
+ 			}
+ 		}
+ 		.tws-price{
+ 			color: rgb(155,155,155);
+ 			font-size: 24pt;
+ 			margin: 15pt 0 15pt;
+ 			display: block;
+ 			font-weight: bold;
+ 			@media only screen and (max-width: 450px) {
+	 			font-size: 18pt;
+	 		}
+ 		}
+ 	}
+ 	h3{
+ 		font-size: 28pt;
+ 		color: #000;
+ 		text-transform: uppercase;
+ 		font-weight: bold;
+ 		@media only screen and (max-width: 450px) {
+ 			font-size: 20pt;
+ 		}
+ 	}
+ }

@@ -1,0 +1,128 @@
+.tws-section1{
+ 	.wrapper{
+  		background-color: rgb(250,252,254);
+  	}
+ }
+
+ .tws-quantity{
+ 	padding: 0 17pt;
+ 	h2{
+ 		color: $prim-color;
+ 		font: {
+ 			size: 24pt;
+ 		}
+ 		display: inline-block; 
+ 		vertical-align: middle;
+ 		margin-right: 10pt;
+ 		@media only screen and (max-width: 450px) {
+	 		font-size: 20pt;
+	 	}
+ 	}
+
+ }
+
+ .tws-counter{
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	padding: 30pt 0;
+ 	a{
+ 		display: inline-block;
+ 		vertical-align: top;
+ 	}
+ }
+
+ .tws-cart-btn{
+ 	color: #fff;
+ 	background-color: $secondary-color;
+ 	width: 337pt;
+ 	max-width: 100%;
+ 	height: 59pt;
+ 	line-height: 59pt;
+ 	text-align: center;
+ 	display: block;
+ 	margin: 0 auto;
+ 	@include border-radius(50px);
+ 	font-size: 21pt;
+ 	@media only screen and (max-width: 450px) {
+ 		font-size: 14pt;
+ 	}
+ 	letter-spacing: 1pt;
+ 	text-decoration: none;
+ }
+
+ .tws-mid-tab{
+ 	text-align: center;
+ 	p{
+	 	@extend .medium-contents;
+		padding: 0 17pt;
+		margin: 29pt 0 35pt;
+		text-align: left;
+ 	}
+ 	hr{
+ 		width: 113pt;
+ 		display: block;
+ 		border: 0;
+ 		height: 2pt;
+ 		background-color: $secondary-color;
+ 	}
+ 	a{
+ 		@extend .medium-contents;
+ 		display: inline-block;
+ 		vertical-align: top;
+ 		color: inherit;
+ 		width: 100%; 
+ 		span{
+ 			display: inline-block;
+ 			vertical-align: middle;
+ 			margin-left: 10pt;
+ 		}
+ 		margin: 15pt 0;
+ 	}
+ }
+
+ .tws-icons-tab{
+ 	ul{
+ 		overflow: hidden;
+ 		padding: 45pt 15pt 30pt;
+ 		text-align: center;
+ 	}
+ 	li{
+ 		width: 152pt;
+ 		margin-bottom: 60pt;
+ 		display: inline-block;
+ 		&:nth-child(2){
+ 			@media only screen and (min-width: 450px) {
+	 			margin-top: 140pt;
+	 		}
+ 		}
+ 		&:nth-child(odd){
+ 			@media only screen and (min-width: 450px) {
+	 			float: left;
+	 		}
+ 		}
+ 		&:nth-child(even){ 
+ 			@media only screen and (min-width: 450px) {
+	 			float: right;
+	 		}
+ 		}
+ 	}
+ 	a{
+ 		display: block;
+ 	}
+ 	img{
+ 		width: 152pt;
+ 		height: 152pt;
+ 		margin-bottom: 10pt;
+ 		@media only screen and (max-width: 450px) {
+ 			width: 70%;
+			height: auto;
+ 		}
+ 		
+ 	}
+ 	span{
+ 		font-size: 16pt;
+ 		color: $prim-color;
+ 		display: block;
+ 		text-align: center;
+ 	}
+ }

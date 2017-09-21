@@ -1,0 +1,46 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass"; 
+@import "compass/reset"; 
+@import "compass/utilities/sprites";
+@import "my-icons/*.png";
+@include all-my-icons-sprites(true);  
+
+@import "modules/all"; 
+
+
+body{
+	font-family: $sec-font;
+	color: $prim-color;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+ .wrapper{ 
+ 	width: 375pt; 
+ 	margin: 0 auto;
+ 	max-width: 100%; 
+ }  
+
+ @import "partials/all";  
+
+
+.tws-section3 h2, 
+.tws-section4 h2,
+.tws-section5 h2,
+.tws-section6 h2,
+.tws-section7 h2,
+.tws-section8 h2,
+.tws-section9 h2{
+	@media only screen and (max-width: 450px) {
+		font-size: 20pt;
+		line-height: 25pt;
+	}
+}
+

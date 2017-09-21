@@ -1,0 +1,50 @@
+.tws-section6{
+ 	text-align: center;
+ 	.wrapper{
+ 		background-color: rgb(242,243,243);
+ 		padding: 40pt 17pt 85pt;
+ 	}
+ 	h2{
+		white-space: pre-line;
+		@extend .large-bold-heading;
+ 	}
+ 	.tws-img-wrap{
+ 		margin: 35pt 0;
+ 		position: relative;
+ 		display: inline-block;
+
+ 		img:last-of-type{
+ 			position: absolute;
+ 			width: 60.8pt;
+			height: 60.8pt;
+			bottom: 0;
+			right: 0;
+ 		}
+ 	}
+ 	img:first-of-type{
+ 		@include border-radius(50%);
+ 		max-width: 100%;
+ 		width: 274.6pt;
+ 		height: 274pt;
+ 		@media only screen and (max-width: 450px) {
+ 			height: auto;
+ 		}
+ 	}
+ 	h3{
+ 		font-size: 26pt;
+ 		color: rgb(74,74,74);
+ 		margin-bottom: 25pt;
+ 		@media only screen and (max-width: 450px) {
+ 			font-size: 20pt;
+ 		}
+ 	}
+ 	p{
+ 		@extend .large-contents;
+ 		white-space: pre-line;
+ 		span{
+ 			color: rgb(155,155,155);
+ 			display: block;
+ 		
+ 		}
+ 	}
+ }

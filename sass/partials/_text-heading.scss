@@ -1,0 +1,29 @@
+.medium-heading{
+	font-size: 32pt;
+	letter-spacing: 0.2pt;
+	line-height: 36pt;
+
+	@media only screen and (max-width: 450px) {
+		font-size: 20pt;
+		line-height: 30pt;
+		letter-spacing: 0pt;
+		white-space: normal!important;
+	}
+}
+
+.large-bold-heading{
+	font:{
+		size: 33pt;
+		weight: bold;
+		family: $prim-font;
+	}
+	letter-spacing: 0.3pt;
+	line-height: 36pt;
+
+	@media only screen and (max-width: 450px) {
+		font-size: 20pt;
+		line-height: 30pt;
+		letter-spacing: 0pt;
+		white-space: normal;
+	}
+}

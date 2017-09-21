@@ -1,0 +1,33 @@
+
+
+ .tws-section8{
+ 	margin-top: -70px;
+ 	.wrapper{
+ 		padding: 120pt 17pt 40px;
+ 		background-color: rgb(250,252,254);
+ 	}
+ 	text-align: center;
+ 	h2{
+ 		color: rgb(74,74,74);
+ 		text-transform: uppercase;
+ 		white-space: pre-line;
+ 		@extend .large-bold-heading;
+ 	}
+ 	img{
+ 		width: 274pt;
+ 		height: 274pt;
+ 		margin: 30pt 0;
+ 		max-width: 100%;
+ 		@media only screen and (max-width: 450px) {
+ 			height: auto
+ 		}
+ 		@include border-radius(50%);
+ 	}
+ 	p{
+ 		@extend .large-contents;	
+ 		width: 337pt;
+ 		max-width: 100%;
+ 		margin-bottom: 30pt;
+ 		display: inline-block;
+ 	}
+ }

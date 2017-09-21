@@ -1,0 +1,96 @@
+.tws-section7{
+ 	$tws-sec7-most-color: rgb(255,130,50);
+
+ 	
+ 	text-align: center;
+ 	color: #fff;
+ 	.wrapper{
+ 		padding: 50pt 20px;
+ 		background: {
+ 			image: url(images/artboard_5.png);
+ 			size: contain;
+ 			repeat: no-repeat;
+ 		}
+ 		@media only screen and (max-width: 450px) {
+	 		background: #FF8232;
+	 		height: auto;
+	 	}
+ 		height: 1209px;
+		margin-top: -39px;
+		position: relative;
+		z-index: 100;
+ 	}
+ 	h2{
+ 		@extend .large-bold-heading;
+ 		text-transform: uppercase;
+ 		text-align: left;
+ 	}
+ 	p{
+ 		@extend .large-contents;
+ 		text-align: left;
+ 		margin: 25pt 0 30pt;
+ 	}
+
+
+ 	.tws-inner{
+ 		text-align: left;
+ 		background-color: #fff;
+ 		color: #000;
+ 		padding: 30pt 25pt 60pt;
+ 		width: 97%;
+		margin: auto;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 44.9pt;
+			height: 47.8pt;
+			background: rgba(255,130,50,0.3);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: -44px;
+			right: -45px;
+			border: 33pt solid #ff8232;
+			@include rotate(45deg);
+		}
+ 		h3{
+ 			color: $tws-sec7-most-color;
+ 			font-size: 26pt;
+ 			line-height: 32pt;
+ 			white-space: pre-line;
+ 			margin-bottom: 18pt;
+ 			font-weight: bold;
+ 			@media only screen and (max-width: 450px) {
+	 			font-size: 20pt;
+	 			white-space: normal;
+	 		}
+ 		}
+ 		ul{
+ 			
+ 			@extend .medium-contents;
+ 			letter-spacing: 3px;
+ 		}
+ 		li{
+ 			position: relative;
+ 			&:before{
+ 				content: '\2022';
+				position: absolute;
+				font-size: 24pt;
+				top: -4px;
+				left: -20px;
+ 			}
+ 		}
+ 		span{
+ 			@extend .medium-contents;
+ 			white-space: pre-line;
+ 			margin-top: 30px;
+ 			display: block;
+ 			letter-spacing: 3px; 
+ 		}
+ 	} 
+ } 

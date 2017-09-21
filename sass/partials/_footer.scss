@@ -1,0 +1,58 @@
+footer{
+
+ 	text-align: center;
+ 	.wrapper{ 
+ 		padding: 40pt 17pt; 
+ 		background:{
+	 		image: url(images/Artboard_4.png);
+	 		color: rgb(250,252,254);
+	 		size: cover;
+	 		position: center;
+	 		repeat: no-repeat;
+	 	}
+	 	
+ 	}
+ 	img{
+ 		max-width: 100%;
+ 	}
+
+ 	h2{
+ 		@extend .large-bold-heading;
+ 		color: $secondary-color;
+ 		white-space: pre-line;
+ 		margin: 10pt 0 43pt;
+ 	}
+
+ 	li{
+ 		background-color: #fff;
+ 		text-align: left;
+ 		margin: 17pt 0;
+ 		border-radius: 5pt;
+ 		overflow: hidden;
+ 		@include box-shadow(0 2pt 4pt #ababab);
+ 	}
+ 	h3{
+ 		font-size: 28pt;
+ 		color: #000;
+ 		font-weight: bold;
+ 		text-transform: uppercase;
+ 		font-family: $prim-font;
+ 		@media only screen and (max-width: 450px) {
+ 			font-size: 20pt;
+ 		}
+ 	}
+ 	span{
+ 		font-size: 24pt;
+ 		color: rgb(155,155,155);
+ 		display: block;
+ 		margin-top: 10pt;
+ 		font-weight: bold;
+ 		letter-spacing: 0.3pt;
+ 		@media only screen and (max-width: 450px) {
+ 			font-size: 18pt;
+ 		}
+ 	}
+ 	.inner{
+ 		padding: 25pt 20pt 30pt;
+ 	}
+ }
